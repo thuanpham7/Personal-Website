@@ -1,0 +1,43 @@
+html {
+    scroll-behavior: smooth;
+}
+
+h2, h3 {
+    text-align: center;
+    line-height: 2;
+}
+
+p {
+    line-height: 1;
+    font-size: 15px;
+    font-family: lato, sans-serif;
+}
+
+.content {
+    margin: 70px 0px;
+}
+
+.image-content {
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    size: 50%;
+}
+
+.heading {
+    display: fixed;
+}
+
+.profile {
+    margin: auto;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.text-content {
+    margin: auto;
+    width: 50%;
+}
+
+
