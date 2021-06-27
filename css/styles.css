@@ -1,43 +1,309 @@
+
+/* General Style */
+
 html {
     scroll-behavior: smooth;
 }
 
-h2, h3 {
-    text-align: center;
+.row-content {
+    margin: 40px;
+    box-shadow: 0px 2px 15px 0px;
+}
+
+li {
     line-height: 2;
 }
 
-p {
-    line-height: 1;
-    font-size: 15px;
-    font-family: lato, sans-serif;
-}
-
-.content {
-    margin: 70px 0px;
-}
-
-.image-content {
-    margin: auto;
+h3 {
     text-align: center;
-    padding: 10px;
-    size: 50%;
 }
 
-.heading {
-    display: fixed;
+.headd-content {
+    padding: 15px 15px 0px 15px;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.text {
+    line-height: 1.5;
+    padding-left: 15px;
+}
+
+#about, #edu, #experience, #project, #hackathons, #contact {
+    padding: 70px 0px 50px 0px;
+}
+
+.each-content{ 
+    margin-bottom: 30px;
+}
+
+/* Heading Content */
+.nav-item {
+    padding: 0px 10px;
+}
+
+/* Main content */
+#main {
+    padding: 100px 0px 50px 0px;
+}
+
+.container-head {
+    text-align: center;
 }
 
 .profile {
-    margin: auto;
-    width: 180px;
-    height: 180px;
-    border-radius: 50%;
+    border-radius: 100%;
+    width: 15%;
 }
 
-.text-content {
-    margin: auto;
+.name-head {
+    padding: 10px 0px 0px 0px;
+    font-size: 25px;
+}
+
+.fab {
+    padding: 0 20px;
+}
+
+
+/* About content */
+
+.card-header {
+    text-align: center;
+}
+
+/* Education */
+
+.edu-year {
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+}
+
+.space {
+    padding: 15px;
+}
+
+.edu-col {
+    background-color: #343a40;
+}
+
+/* Experience */
+
+.content-inside {
+    padding: 40px 30px;
+    text-align: center;
+    color: #fff;
+}
+
+/* Project */
+
+#project .card {
+    border: none;
+}
+
+.project-img {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.project-text {
+    text-align: center;
+    line-height: 2;
+    padding: 9%;
+}
+
+
+/* Hackathons  */
+
+.hacking {
+    background-color: #343a40;
+}
+
+.hack-content {
+    padding: 50px 0px;
+}
+
+.hack-content h4{
+    color: white;
+    text-align: center;
+}
+
+.hack-text {
+    padding: 1% 9%;
+}
+
+.hack-content p {
+    color: white;
+    text-align: center;
+    line-height: 2;
+    margin: 0;
+}
+
+.hack-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     width: 50%;
+    padding: 20px;
 }
 
+.hack-img:hover {
+    opacity: 0.7;
+}
 
+/* Contact  */
+
+#contact .card {
+    margin-left: 30%;
+    margin-right: 30%;
+    width: 50%;
+    border: none;
+}
+
+#contact .each-content {
+    text-align: left;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+#contact .card-body {
+    padding: 0px;
+}
+
+.card-body p {
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+/* Prefooter */
+#prefooter{
+    padding: 70px 0px 0px 0px;
+}
+
+.pre-footer {
+    background-color: #f7f7f7;
+}
+
+.pre-footer-content {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.pre-footer-content:hover {
+    opacity: 0.7;
+}
+
+.pre-footer a{
+    color: #000;
+}
+
+.pre-footer-content .fa-soundcloud:hover {
+    color: #FF7F34;
+}
+
+.pre-footer-content .fa-facebook-square:hover{
+    color: #3b5998;
+}
+
+.pre-footer-content .fa-instagram:hover{
+    color: #c32aa3;
+}
+
+/* Footer */
+#foooter {
+    background-color: #1f1f1f;
+}
+
+.footer {
+    padding: 100px;
+}
+
+.footer p {
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+/* Tablet */
+@media (max-width: 1024px){
+    .profile {
+        width: 20%;
+    }
+}
+
+/*  Mobile  */
+@media (max-width: 480px){
+    .profile {
+        width: 40%;
+    }
+
+    #project .space {
+        padding: 10px;
+    }
+
+    .row-content {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+    .card {
+        margin-bottom: 20px;
+    }
+
+    #project .space{
+        padding: 0;
+    }
+
+    #project .card {
+        margin-bottom: 20px;
+    }
+
+    #project .card-body {
+        padding: 0;
+    }
+
+    .project-img {
+        display: block;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .project-text {
+        text-align: center;
+        line-height: 2;
+        padding: 3%;
+    }
+
+    .hack-img{
+        width: 80%;
+    }
+
+    #contact .card {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        width: 100%;
+    }
+    
+    #contact .each-content {
+        text-align: left;
+        margin-left: auto;
+        padding-left: 10px;
+        margin-right: auto;
+    }
+
+    .footer {
+        padding: 70px;
+    }
+    
+}

@@ -1,84 +1,300 @@
-<DOCTYPE !>
-<html>
+<!doctype html>
+
+<html lang="en">
     <head>
-        <meata charset = "utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel = "stylesheet" href = "css/styles.css">
-        <title>TP</title>
-       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Merriweather|Sacramento" rel="stylesheet">
+        <title>Thuan Pham</title>
+        <link rel="shortcut icon" type="image/jpg" href="assetts/icon.png"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     </head>
+
     <body>
         <div class = "heading">
-            <nav class = "navbar navbar-expand-lg navbar-light">
-                 <a class = "navbar-brand" href =""> TP </a>
+            <nav class = "navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                 <a class = "navbar-brand" href ="#main"> TP </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class = "collapse navbar-collapse" id ="navbarNav">
                     <ul class = "navbar-nav ml-auto">
                         <li class = "nav-item"> 
-                            <a class="nav-link" href = "#edu"> Education </a>
+                            <a class="nav-link js-scroll-trigger" href = "#about"> About </a>
                         </li>
                         <li class = "nav-item"> 
-                            <a class="nav-link" href = ""> Experience </a>
+                            <a class="nav-link js-scroll-trigger" href = "#edu"> Education </a>
                         </li>
                         <li class = "nav-item"> 
-                            <a class="nav-link" href = ""> Project </a>
+                            <a class="nav-link js-scroll-trigger" href = "#experience"> Experience </a>
                         </li>
-                        <li class = "nav-item"> 
-                            <a class="nav-link" href = ""> Contact </a>
+                        <li class = "nav-item js-scroll-trigger"> 
+                            <a class="nav-link" href = "#project"> Project </a>
+                        </li>
+                        <li class = "nav-item js-scroll-trigger"> 
+                            <a class="nav-link" href = "#hackathons"> Hackathons </a>
+                        </li>
+                        <li class = "nav-item js-scroll-trigger"> 
+                            <a class="nav-link" href = "#contact"> Contact </a>
                         </li>
                     </ul>
                 </div> 
             </nav>
         </div>
 
-         <div class = "container">
-            <div class = "content"></div>
-        </div>
-
-        <div class = "container">
-            <div class = "image-content">
-                <img class = "profile" src = "assetts/profile.jpeg">
+        <section id = "main">
+            <div class = "container-fluid container-head">
+                <div class = "image-content">
+                    <img class = "profile" src = "assetts/profile.jpeg">
+                </div>
+                <div class = "text-content">
+                    <h2 class = "name-head"> Thuan Pham </h2>
+                    <p class = "text-head"> Full-Stack Web Developer - Software Engineer - Machine Learning </p>
+                    <a href = "https://github.com/thuanpham7"><button type="button" class="btn btn-light"><i class="fab fa-github"></i></button></a>
+                    <a href = "https://www.linkedin.com/in/thuanpham7/"><button type = "button" class = "btn btn-light"><i class="fab fa-linkedin"></i></button></a>
+                    <a href = "https://github.com/thuanpham7"><button type = "button" class = "btn btn-light"><i class="fas fa-file-pdf"></i> Resume</button></a>
+                    
+                </div>
             </div>
-                
-            <div class = "text-content">
-                <h2> Thuan Pham <h2>
-                <p> Full-Stack Web Developer - Software Engineer - Machine Learning </p>
-            </div>
-        </div>
+        </section>    
 
-        <div class = "container">
-            <div class = "content"></div>
-        </div>
 
-    <section id = "edu">
-        <div class = "container">
-            <h3 style = "padding: 20px"> Education </h3>
-            <div class = "container-2">
+        <section id = "about">
+            <div class = "container">
+                <h3 class = "each-content"> About </h3>
                 <div class = "row">
-                    <div class = "col-lg-3">
-                        <br>
-                        <br>
-                        <p>2020 - 2023</p>
-
+                    <div class = "col-lg-6">
+                        <div class = "card">
+                            <div class = "card-header"> Skills </div>
+                            <div class = "card-body">
+                                <ul>
+                                    <li><b>Programming Language:</b> Python, Java, C++, JavaScript, Swift</li>
+                                    <li><b>Frameworks</b>: ReactJS, NodeJS, ExpressJS, Django, Flask, JUnit, WordPress, Bootsrap 5</li>
+                                    <li><b>Database</b>: SQL, NOSQL, MongoDB</li>
+                                    <li><b>Libraries</b>: Matlab, Numpy, Tensorflow, OpenCV</li>
+                                    <li><b>Others</b>: git, vim, Linux, Kali Linux, Software Security</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class = "col-lg-9">
-                        <h4> University of Florida </h4>
-                        <p> Major: Computer Science </p>
-                        <p> GPA: 3.6 </p>
+                    <div class = "col-lg-6">
+                        <div class = "card">
+                            <div class = "card-header"> Relevant Coursework </div>
+                            <div class = "card-body">
+                                <ul>
+                                    <li>Data Structures and Algorithm, Database System</li>
+                                    <li>Software Engineering I, Computer Organization</li>
+                                    <li>Numerical Analysis, Discrete Structures</li>
+                                    <li>Engineering Statistics, Linear Algebra</li>
+                                    <li> Calculus I, Calculus II, Calculus III </li>
+                                    <li>Intro to Computing, Programming Fundamentals I, II</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-        
+        </section>
 
+        <section id = "edu">
+            <div class = "container">
+            <div class = "space"> 
+                <h3 class = "each-content"> Education </h3>
+                <div class = "row-content row">
+                    <div class = "edu-col col-lg-3"> 
+                        <p class = "edu-year"> 2020 - 2023 (Expected) </p>
+                    </div>
+                        
+                    <div class = "edu-content col-lg-8">
+                        <p class = "headd-content"> University of Florida </p>
+                        <p class = "text"> Bachelor of Science</p>
+                        <p class = "text"> Major: Computer Science </p>
+                        <p class = "text"> GPA: 3.63 </p>
+                    </div>
+                </div>
+                <div class = "row-content row">
+                    <div class = "edu-col col-lg-3">
+                        <p class = "edu-year">2018 - 2020 (Transfer) </p>
+                    </div>
+                        
+                    <div class = "edu-content col-lg-8 ">
+                        <p class = "headd-content"> Stetson University </p>
+                        <p class = "text"> Bachelor of Science</p>
+                        <p class = "text"> Major: Computer Science, Mathematics </p>
+                        <p class = "text"> GPA: 3.59 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <section id = "experience">
+            <div class = "container">
+            <div class = "space">
+                <h3 class = "each-content"> Experience </h3>
+                    <div class = "row-content row">
+                        <div class = "edu-col col-lg-3">
+                            <div class = "content-inside">
+                                <h5> TRG International </h5>
+                                <p> March 2021 - June 2021 </p>
+                            </div> 
+                        </div>
+                        <div class = "edu-content col-lg-8">
+                            <p class = "headd-content"> Web Developer Intern </p>
+                            <p class = "text">Developed and redesigned PJ's Coffee Vietnam Website in English and Vietnamese</p>
+                            <p class = "text"> Fixed layout issues over 100 pages for TRG International </p>
+                            <p class = "text"> Collaborated with web developers in the marketing team to audit contents and transfer data from Hubspot to Wordpress</p>
+                        </div>
+                    </div>
+                    <div class = "row-content row">
+                        <div class = "edu-col col-lg-3">
+                            <div class = "content-inside">
+                                <h5> Stetson University </h5>
+                                <p> August 2019 - May 2020 </p>
+                            </div> 
+                        </div>
+                        <div class = "edu-content col-lg-8 ">
+                            <p class = "headd-content"> Computer Science Tutor </p>
+                            <p class = "text"> Aided 50+ students in further understanding
+                            the content of classes related to the fundamentals of Computer Science </p>
+                            <p class = "text"> Debugged thousands lines of code </p>
+
+                        </div>
+                    </div>
+                    <div class = "row-content row">
+                        <div class = "edu-col col-lg-3">
+                            <div class = "content-inside">
+                                <h5> Stetson University </h5>
+                                <p> August 2019 - May 2020 </p>
+                            </div> 
+                        </div>
+                        <div class = "edu-content col-lg-8 ">
+                            <p class = "headd-content"> International Ambassador </p>
+                            <p class = "text">  Responsible for providing academic and social supports for international students</p>
+                            <p class = "text"> Got to exposed communication, teamwork, and leadership skills by working with a well training team </p>
+                        </div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </section>  
+
+        <section id = "project">
+            <div class = "container">
+            <div class = "space">
+                <h3 class = "each-content"> Project </h3>
+                <div class = "row">
+                    <div class = "col-lg-6">
+                        <div class = "card">
+                            <div class = "card-body">
+                                <img class = "project-img" src = "assetts/cs.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class = "card">
+                            <div class = "card-project card-body">
+                                <p class = "project-text"> Responsible for providing academic and social supports for international students 
+                                Responsible for providing academic and social supports for international students
+                                Responsible for providing academic and social supports for international students
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class = "row">
+                    <div class = "col-lg-6">
+                        <div class = "card">
+                            <div class = "card-body">
+                                <img class = "project-img" src = "assetts/cs.png">
+                            </div>
+                        </div>
+                    </div>
+                    <div class = "col-lg-6">
+                        <div class = "card">
+                            <div class = "card-project card-body">
+                                <p class = "project-text"> Responsible for providing academic and social supports for international students 
+                                Responsible for providing academic and social supports for international students
+                                Responsible for providing academic and social supports for international students
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>  
+
+        <section id = "hackathons">
+            <div class = "container-fluid">
+                    <h3 class = "each-content"> Hackathons </h3>
+                    <div id="hacking" class="carousel slide" data-ride = "false">
+                    <div class = "hacking"> 
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class = "hack-content">
+                                    <a href = "https://github.com/thuanpham7/CodeForGood-FrontEnd"><img class = "hack-img" src = "assetts/hackathon.png"></a>
+                                    <div class = "hack-text">
+                                        <h4> JPMorgan Code for Good </h4>
+                                        <p> A website for The ALS Association, Florida Chapter to help raise ASL awareness in Florida. </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class = "hack-content">
+                                    <a href = "https://devpost.com/software/lets-shop"><img class = "hack-img" src = "assetts/hackathon.png"></a>
+                                    <div class = "hack-text">
+                                        <h4> Stetson Hatter Hack</h4>
+                                        <p> A shopping application for buying records and provides information of groceries. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#hacking" role = "button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#hacking" role = "button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id = "contact">
+            <div class = "container-fluid">
+                <h3 class = "each-content"> Contact </h3>
+                <div class = "card">  
+                    <div class = "card-body">
+                        <p> Work email </p>
+                        <p> thuan.phamhuuhoan@gmail.com </p>
+                        <br>
+                        <p> Work number </p>
+                        <p> + 1 (657) 262 2742 </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id = "prefooter">
+            <div class = "pre-footer container-fluid">
+                <div class = "pre-footer-content">
+                    <a href = "https://www.instagram.com/thuanpham7/"><i class="fab fa-instagram"></i></a>
+                    <a href = "https://www.facebook.com/phht.01/"><i class="fab fa-facebook-square"></i></a>
+                    <a href = "https://soundcloud.com/thuanpham7"><i class="fab fa-soundcloud"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section id = "foooter">
+            <div class = "footer">
+                <p> THUAN PHAM </p>
+                <p> 3rd Year Computer Science Student At University of Florida </p>
+            </div>
+        </section>
+
+        <script src="https://kit.fontawesome.com/55584038c3.js" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     </body>
-
-    
 </html>
